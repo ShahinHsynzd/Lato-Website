@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-image: url(images/pexels-the-lazy-artist-gallery-1117485.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    width: 40px
+}
+
+/* Text */
+.dark-decoration {
+    position: absolute;
+    height: 100vh;
+    width: 500px;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+
+.text {
+    color: #fff;
+    position: absolute;
+    z-index: 5;
+    left: 80px;
+}
+
+.text h1 {
+    font-size: 7em;
+    font-weight: 100;
+
+}
+
+.text p {
+    width: 300px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    text-align: justify;
+}
+
+/* Butttons */
+
+.buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.buttons li {
+    list-style-type: none;
+}
+
+.buttons a {
+    text-decoration: none;
+    border: 3px solid #fff;
+    background: transparent;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.buttons a:hover {
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
